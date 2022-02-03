@@ -1,4 +1,4 @@
-package bubble.test.ex06;
+package bubble.test.ex07;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -48,12 +48,12 @@ public class BubbleFrame  extends JFrame{
 				//아래키를 누를 필요가 없기 때문에 down은 지움
 				switch(e.getKeyCode()) {
 					case KeyEvent.VK_LEFT: //37
-						if(!player.isLeft()) { //왼쪽을 눌러야 false에서 true로 바뀌므로
+						if(!player.isLeft() && !player.isLeftWallCrash()) { //왼쪽을 눌러야 false에서 true로 바뀌므로
 							player.left();
 						}
 						break;
 					case KeyEvent.VK_RIGHT: //39
-						if(!player.isRight()) {
+						if(!player.isRight() && !player.isRightWallCrash()) {
 							player.right();
 						}
 						break;

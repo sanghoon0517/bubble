@@ -37,7 +37,7 @@ public class Player extends JLabel implements Moveable{
 	}
 	
 	private void initSetting() {
-		x = 55;
+		x = 80;
 		y = 535;
 		
 		//처음에는 안움직이니까 모두 false로 초기화
