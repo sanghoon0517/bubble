@@ -1,4 +1,4 @@
-package bubble.test.ex08;
+package bubble.test.ex09;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -11,7 +11,6 @@ import javax.swing.JLabel;
 public class BubbleFrame  extends JFrame{
 	
 	private JLabel backgroundMap;
-//	private BackgroundPlayerService backgroundPlayerService;
 	private Player player;
 	
 	public BubbleFrame() {
@@ -19,22 +18,14 @@ public class BubbleFrame  extends JFrame{
 		initObject();
 		initSetting();
 		initListener();
-//		initThread();
 		setVisible(true);
 	}
-	
-//	private void initThread() {
-//		new Thread(backgroundPlayerService).start();
-//	}
 	
 	private void initObject() {
 		backgroundMap = new JLabel(new ImageIcon("image/backgroundMapService.png")); //test.png로 잠시 변경
 		setContentPane(backgroundMap); //JPanel = JLabel 로 변경(덮어씌움)
-		
 		player = new Player();
 		add(player);
-//		backgroundMap.setSize(1000,600);
-//		add(backgroundMap); //JFrame에 JLabel이 그려진다.
 	}
 	
 	private void initSetting() {

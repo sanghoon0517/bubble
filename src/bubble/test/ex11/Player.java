@@ -1,4 +1,4 @@
-package bubble.test.ex08;
+package bubble.test.ex11;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -13,6 +13,9 @@ public class Player extends JLabel implements Moveable{
 	//위치상태
 	private int x;
 	private int y;
+	
+	//플레이어의 방향
+	private PlayerWay playerWay;
 	
 	//움직임상태
 	private boolean left;
@@ -54,6 +57,7 @@ public class Player extends JLabel implements Moveable{
 		leftWallCrash = false;
 		rightWallCrash = false;
 		
+		playerWay = PlayerWay.RIGHT;
 		setIcon(playerR);
 		setSize(50,50);
 		setLocation(x,y);
@@ -66,8 +70,6 @@ public class Player extends JLabel implements Moveable{
 	//이벤트 핸들러
 	@Override
 	public void up() {
-		// TODO Auto-generated method stub
-		System.out.println("up");
 		up = true;
 		new Thread(() -> {
 			for(int i = 0; i<130/JUMPSPEED; i++) {
@@ -92,8 +94,6 @@ public class Player extends JLabel implements Moveable{
 
 	@Override
 	public void down() {
-		// TODO Auto-generated method stub
-		System.out.println("down");
 		down = true;
 		new Thread(() -> {
 			while(down) {
@@ -114,9 +114,7 @@ public class Player extends JLabel implements Moveable{
 
 	@Override
 	public void left() {
-		// TODO Auto-generated method stub
-		
-		System.out.println("left");
+		playerWay = PlayerWay.LEFT;
 		left = true;
 		new Thread(() -> {
 			//람다식
@@ -145,7 +143,7 @@ public class Player extends JLabel implements Moveable{
 //				
 //			}
 //		}).start();
-		System.out.println("right");
+		playerWay = PlayerWay.RIGHT;
 		right = true;
 		new Thread(() -> {
 			//람다식

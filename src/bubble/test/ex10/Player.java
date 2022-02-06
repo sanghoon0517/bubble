@@ -1,4 +1,4 @@
-package bubble.test.ex08;
+package bubble.test.ex10;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -115,7 +115,6 @@ public class Player extends JLabel implements Moveable{
 	@Override
 	public void left() {
 		// TODO Auto-generated method stub
-		
 		System.out.println("left");
 		left = true;
 		new Thread(() -> {

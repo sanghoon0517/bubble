@@ -1,4 +1,4 @@
-package bubble.test.ex08;
+package bubble.test.ex09;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -76,7 +76,7 @@ public class Player extends JLabel implements Moveable{
 				setLocation(x,y);
 				try {
 					Thread.sleep(5);
-				} catch (InterruptedException e) {
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
@@ -93,23 +93,26 @@ public class Player extends JLabel implements Moveable{
 	@Override
 	public void down() {
 		// TODO Auto-generated method stub
-		System.out.println("down");
-		down = true;
-		new Thread(() -> {
-			while(down) {
-				//왼쪽 상단이 (0,0)이기 때문에 점프할때는 -y를 해야한다.
-				y = y+JUMPSPEED;
-				setLocation(x,y);
-				try {
-					Thread.sleep(3);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+		if(down == false) {
+			System.out.println("down");
+			down = true;
+			new Thread(() -> {
+				while(down) {
+					//왼쪽 상단이 (0,0)이기 때문에 점프할때는 -y를 해야한다.
+					System.out.println("하강중");
+					y = y+JUMPSPEED;
+					setLocation(x,y);
+					try {
+						Thread.sleep(3);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
-			}
-			//상태변경
-			down = false;
-		}).start();
+				//상태변경
+				down = false;
+			}).start();
+		}
 	}
 
 	@Override
