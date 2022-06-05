@@ -17,7 +17,7 @@ public class Player extends JLabel implements Moveable{
 	private int y;
 	
 	//플레이어의 방향
-	private ElayerWay playerWay;
+	private PlayerWay playerWay;
 	
 	//움직임상태
 	private boolean left;
@@ -60,7 +60,7 @@ public class Player extends JLabel implements Moveable{
 		leftWallCrash = false;
 		rightWallCrash = false;
 		
-		playerWay = ElayerWay.RIGHT;
+		playerWay = PlayerWay.RIGHT;
 		setIcon(playerR);
 		setSize(50,50);
 		setLocation(x,y);
@@ -75,7 +75,7 @@ public class Player extends JLabel implements Moveable{
 		new Thread(() -> {
 			Bubble bubble = new Bubble(mContext);
 			mContext.add(bubble);
-			if(playerWay == ElayerWay.LEFT) {
+			if(playerWay == PlayerWay.LEFT) {
 				bubble.left();
 			} else {
 				bubble.right();
@@ -130,7 +130,7 @@ public class Player extends JLabel implements Moveable{
 
 	@Override
 	public void left() {
-		playerWay = ElayerWay.LEFT;
+		playerWay = PlayerWay.LEFT;
 		left = true;
 		new Thread(() -> {
 			//람다식
@@ -159,7 +159,7 @@ public class Player extends JLabel implements Moveable{
 //				
 //			}
 //		}).start();
-		playerWay = ElayerWay.RIGHT;
+		playerWay = PlayerWay.RIGHT;
 		right = true;
 		new Thread(() -> {
 			//람다식

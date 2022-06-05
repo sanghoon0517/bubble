@@ -1,5 +1,5 @@
 package bubble.test.ex16;
 
-public enum ElayerWay {
+public enum PlayerWay {
 	LEFT, RIGHT;
 }
