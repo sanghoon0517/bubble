@@ -24,14 +24,11 @@
 
 클리어시 이벤트 추가
 
-![Untitled](%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20047e7110ce764f778302ad63a29b7e4f/Untitled.png)
-
+![image](https://user-images.githubusercontent.com/66873195/172047406-58cba7f1-626f-4917-9086-657fd56bc631.png)
 시작시 플레이 모습
 
-![Untitled](%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20047e7110ce764f778302ad63a29b7e4f/Untitled%201.png)
-
+![image](https://user-images.githubusercontent.com/66873195/172047411-be5f0176-20a2-4bf7-a0dc-b710002deebd.png)
 플레이어가 스페이스 바를 이용해 물방울로 공격
 
-![Untitled](%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%E1%84%87%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5%20047e7110ce764f778302ad63a29b7e4f/Untitled%202.png)
-
+![image](https://user-images.githubusercontent.com/66873195/172047415-26eb56c3-f7b1-497f-9c87-34dbb86544a7.png)
 적이 물방울에 닿으면 갇힘
